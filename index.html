@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story — Chapter 2 Begins...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stage-container" id="mainViewport">
+        <div class="env-layer heartfield" id="envStars"></div>
+        <div class="env-layer weather-rain" id="envRain"></div>
+        <div id="particleEmitterSpace" style="position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:3;"></div>
+
+        <div class="love-letter-card" id="displayCard">
+            <div class="animated-text" id="textRenderer">Typing...</div>
+            <div class="choice-tray" id="controlsTray">
+                <button class="interactive-btn btn-yes" onclick="processPathSelection('yes')">❤️ YES</button>
+                <button class="interactive-btn btn-try" onclick="processPathSelection('try')">💖 Let's Try Again</button>
+            </div>
+        </div>
+
+        <div class="cinema-floor" id="cinemaFloorLayer">
+            <div class="silhouette boy-actor" id="boyNode"><div class="actor-arm"></div></div>
+            <div class="silhouette girl-actor" id="girlNode"><div class="actor-arm"></div></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
